@@ -865,3 +865,55 @@ footer {
     font-size:32px;
     padding: 32px;
 }
+
+/*  SMALL PHONEs, TABLETS, LARGE PHONES */
+@media (max-width: 768px) {
+    .header__description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;        
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    img {
+        width: 50%;
+    }
+
+}
+
+/*  SMALL PHONEs, LARGE PHONES */
+
+@media (max-width: 550px) {
+    .btn__menu {
+        display: block;
+    }
+
+    .nav__links {
+        display: none;
+    }
+
+    .plans {
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .feature {
+        flex-wrap: wrap;
+    }
+}
