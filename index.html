@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9f094611fb.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -23,6 +25,25 @@
                     <a href="#" class="nav__link nav__link--primary">Sign Up</a>
                 </div>
             </div>
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#"class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#"class="menu__link">About</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#"class="menu__link">Contact</a>
+                    </li>
+                </ul>
+            </div> 
         </nav>
         <header>
             <div class="container">
@@ -235,53 +256,111 @@
                                 <div class="plan__duration">MONTHLY</div>
                             </div>
                             <div class="plan__middle">
-                                <p class="plan__target">For Individuals</p>
+                                <div class="plan__target">For Individuals</div>
                                 <p class="plan__feature">30 Templates</p>
                                 <p class="plan__feature">7 landing pages</p>
-                                <p class="plan__feature">Basic Assistance</p>
-                            </div>
-                            <div class="plan__bottom">
-                                <button class="plan__btn">BUY NOW</button>
-                            </div>
-                        </div>
-                        <div class="plan">
-                            <div class="plan__stripe"></div>
-                            <div class="plan__top">
-                                <div class="plan__name">PERSONAL</div>
-                                <div class="plan__price">$17.99</div>
-                                <div class="plan__duration">MONTHLY</div>
-                            </div>
-                            <div class="plan__middle">
-                                <p class="plan__target">For Individuals</p>
-                                <p class="plan__feature">30 Templates</p>
-                                <p class="plan__feature">7 landing pages</p>
-                                <p class="plan__feature">Basic Assistance</p>
-                            </div>
-                            <div class="plan__bottom">
-                                <button class="plan__btn">BUY NOW</button>
-                            </div>
-                        </div>
-                        <div class="plan">
-                            <div class="plan__stripe"></div>
-                            <div class="plan__top">
-                                <div class="plan__name">PERSONAL</div>
-                                <div class="plan__price">$17.99</div>
-                                <div class="plan__duration">MONTHLY</div>
-                            </div>
-                            <div class="plan__middle">
-                                <p class="plan__target">For Individuals</p>
-                                <p class="plan__feature">30 Templates</p>
-                                <p class="plan__feature">7 landing pages</p>
+                                <p class="plan__feature">12 Internal Pages</p>
                                 <p class="plan__feature">Basic Assistance</p>
                             </div>
                             <div class="plan__bottom">
                                 <button class="plan__button">BUY NOW</button>
                             </div>
                         </div>
+                        <div class="plan">
+                            <div class="plan__stripe"></div>
+                            <div class="plan__top">
+                                <div class="plan__name">BUSINESS</div>
+                                <div class="plan__price">$37.99</div>
+                                <div class="plan__duration">MONTHLY</div>
+                            </div>
+                            <div class="plan__middle">
+                                <div class="plan__target">For Small Business</div>
+                                <p class="plan__feature">60 Templates</p>
+                                <p class="plan__feature">15 landing pages</p>
+                                <p class="plan__feature">22 Internal Pages</p>
+                                <p class="plan__feature">Priority Assistance</p>
+                            </div>
+                            <div class="plan__bottom">
+                                <button class="plan__button">BUY NOW</button>
+                            </div>
+                        </div>
+                        <div class="plan">
+                            <div class="plan__stripe"></div>
+                            <div class="plan__top">
+                                <div class="plan__name">ENTERPRISE</div>
+                                <div class="plan__price">$57.99</div>
+                                <div class="plan__duration">MONTHLY</div>
+                            </div>
+                            <div class="plan__middle">
+                                <div class="plan__target">For Large Companies</div>
+                                <p class="plan__feature">90 Templates</p>
+                                <p class="plan__feature">27 landing pages</p>
+                                <p class="plan__feature">37 Internal Pages</p>
+                                <p class="plan__feature">Personal Assistance</p>
+                            </div>
+                            <div class="plan__bottom">
+                                <button class="plan__button">BUY NOW</button>
+                            </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </section>
-    </main> 
+    </main>
+    <footer>
+        <div class="row footer__row">
+            <div class="footer__columns">
+                <div class="footer__column">
+                    <div class="links">MAIN</div>
+                    <p class="link">Blog</p>
+                    <p class="link">FAQs</p>
+                    <p class="link">Support</p>
+                    <p class="link">About Us</p>
+                </div>
+                <div class="footer__column">
+                    <div class="links">PRODUCT</div>
+                    <p class="link">Log In</p>
+                    <p class="link">Personal</p>
+                    <p class="link">Business</p>
+                    <p class="link">Team</p>
+                </div>
+                <div class="footer__column">
+                    <div class="links">PRESS</div>
+                    <p class="link">Logos</p>
+                    <p class="link">Events</p>
+                    <p class="link">Stories</p>
+                    <p class="link">Office</p>
+                </div>
+                <div class="footer__column">
+                    <div class="links">TEAM</div>
+                    <p class="link">Career</p>
+                    <p class="link">Founders</p>
+                    <p class="link">Culture</p>
+                    <p class="link">Onboarding</p>
+                </div>
+                <div class="footer__column">
+                    <div class="links">LEGAL</div>
+                    <p class="link">GDPR</p>
+                    <p class="link">Privacy Policy</p>
+                    <p class="link">Terms of Service</p>
+                    <p class="link">Disclaimer</p>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__logo">
+                    <img src="./Assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt class="footer__logo--img">
+                    <h5 class="footer__logo--text">Treact Inc.</h5>
+                </div>
+                <div class="footer__copyright"> &copy 2026 Romel Inc. All Rights Reserved.</div>
+                <div class="footer__socials">
+                    <a class="footer__social--link">
+                        <a href="#" class="fa-brands fa-square-facebook"></a>
+                        <a href="#" class="fa-brands fa-twitter"></a>
+                        <a href="#" class="fa-brands fa-youtube"></a>
+                    </a>
+                </div>
+            </div>
+        </div> 
+    </footer> 
 </body>
 </html>
