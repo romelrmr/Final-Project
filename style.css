@@ -861,14 +861,66 @@ section {
     width: 50%; 
 }
 
-#start {
+
+.start__row {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #5f488c;
-    margin: 24px 48px;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.start__container {
+    padding: 96px 0;
+    width: 100%;
+    background-color:#5f488c;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__container--row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
     padding: 0 32px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__title {
+    color: #f7fafc;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    z-index: 2;
+}
+
+.start__title .start__buttons {
+    width: 50%;
+}
+
+.start__button {
+    padding: 10px 40px;
+    border-radius: 400px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #999da0;
+    margin: 1px;
+    z-index: 2;
+}
+
+.start__button:nth-child(1) {
+    background: #6573f5;
+    margin-right: 32px;
+}
+
+.start__buttons {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /*
@@ -949,7 +1001,25 @@ footer {
     padding: 32px;
 }
 
-/*  SMALL PHONEs, TABLETS, LARGE PHONES */
+/*   */
+
+@media (max-width: 1024px) {
+    header .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (max-width: 1024px) {
+    .btn__menu {
+        display: block;
+    }
+
+    footer {
+        padding: 80px 32px;
+    }
+}
+
+/*  */
 @media (max-width: 768px) {
     .header__description {
         padding: 0 24px;
@@ -975,9 +1045,28 @@ footer {
         width: 50%;
     }
 
+    footer__info {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-/*  SMALL PHONEs, LARGE PHONES */
+
+/*  */
+
+@media (max-width: 640px) {
+    .container {
+        padding: 80px 0;
+    }
+}
+
+    main {
+        margin-bottom: 80px;
+    }
+}
+
+
+/*  */
 
 @media (max-width: 550px) {
     .btn__menu {
