@@ -1042,10 +1042,6 @@ footer {
         text-align: center;
     }
 
-    .footer__columns {
-        justify-content: center;
-    }
-
     .footer__column .links .link{
         width: auto;
         padding: 0 16px;
@@ -1053,6 +1049,9 @@ footer {
         align-items: center;
     }
 
+    .footer__column {
+        padding: 16px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1081,6 +1080,17 @@ footer {
 
     #steps .row, #testimonials .row {
         flex-direction: column;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .footer__copyright {
+        align-items: center;
+        display: flex;
+        text-align: center;
+        font-size: 12px;
     }
 
 }
