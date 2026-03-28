@@ -65,7 +65,7 @@ nav {
     margin: 0;
     margin-top: 2px;
     padding: 10px 32px;
-    background-color: #5f488c;
+    background-color:#6415ff;
     color: #fff;
     border-radius: 99999px;
     line-height: 1.5;
@@ -80,6 +80,7 @@ nav {
     text-align: center;
     border: none;
     color:#5f488c; 
+    display: none;
 }
 
 .menu__backdrop {
@@ -906,7 +907,7 @@ section {
     border-radius: 400px;
     font-weight: 700;
     font-size: 16px;
-    color: #999da0;
+    color: white;
     margin: 1px;
     z-index: 2;
 }
@@ -917,7 +918,9 @@ section {
 }
 
 .start__button:nth-child(2) {
+    background: #6415ff;
     margin-right: 32px;
+    border: 1px solid rgb(160, 174, 192);
 }
 
 .start__buttons {
@@ -1068,7 +1071,7 @@ footer {
 
     .start__button:nth-child(2) {
         margin-right: 0;
-        background-color: #6415ff;
+        background-color:#6415ff;
         border: 1px solid rgb(160, 174, 192);
     }
 
